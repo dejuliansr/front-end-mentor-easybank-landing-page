@@ -4,6 +4,10 @@ body {
   font-family: "Hanken Grotesk", serif;
 }
 
+.background {
+  background-image: url("../images/bg-intro-mobile.svg");
+}
+
 /* Animasi untuk menu muncul (slide-in) */
 @keyframes slideIn {
   from {
@@ -69,4 +73,10 @@ body {
 .slide-down.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+@media (min-width: 1024px) { 
+  .background {
+    background-image: url("../images/bg-intro-desktop.svg");
+  }
 }
