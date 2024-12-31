@@ -26,7 +26,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ### Links
 
-- Live Site URL: [https://dejuliansr.github.io/front-end-mentor-easybank-landing-bank](https://dejuliansr.github.io/front-end-mentor-easybank-landing-bank)
+- Live Site URL: [https://dejuliansr.github.io/front-end-mentor-easybank-landing-page](https://dejuliansr.github.io/front-end-mentor-easybank-landing-page)
 
 ## My process
 
