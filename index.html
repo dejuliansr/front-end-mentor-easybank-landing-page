@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Easybank landing page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font.css">
+  </head>
+  <body>
+    <header class="bg-white shadow-lg fixed w-full z-50">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4">
+        <img src="images/logo.svg" alt="Easybank Logo" class="h-5">
+        <nav class="hidden lg:flex space-x-8">
+          <a href="#" class="text-Grayish-Blue hover:text-gray-900 hover:border-b-2 hover:border-Lime-Green">Home</a>
+          <a href="#" class="text-Grayish-Blue hover:text-gray-900 hover:border-b-2 hover:border-Lime-Green">About</a>
+          <a href="#" class="text-Grayish-Blue hover:text-gray-900 hover:border-b-2 hover:border-Lime-Green">Contact</a>
+          <a href="#" class="text-Grayish-Blue hover:text-gray-900 hover:border-b-2 hover:border-Lime-Green">Blog</a>
+          <a href="#" class="text-Grayish-Blue hover:text-gray-900 hover:border-b-2 hover:border-Lime-Green">Careers</a>
+        </nav>
+        <button id="menu-toggle" class="lg:hidden">
+          <img src="images/icon-hamburger.svg" alt="Menu" class="h-6 w-6">
+        </button>
+    
+        <button class="hidden lg:block bg-gradient-to-r from-Lime-Green to-Bright-Cyan text-white px-4 py-2 rounded-full">
+          Request Invite
+        </button>
+      </div>
+    </header>
+    <!-- Overlay and mobile menu -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+    <nav id="mobile-menu" class="fixed top-1/3 left-1/2 -translate-x-2/4 -translate-y-2/4 h-auto p-5 bg-white hidden flex-col items-center justify-center space-y-4 rounded-lg lg:hidden z-50">
+      <a href="#" class="text-lg text-gray-600 hover:text-gray-900">Home</a>
+      <a href="#" class="text-lg text-gray-600 hover:text-gray-900">About</a>
+      <a href="#" class="text-lg text-gray-600 hover:text-gray-900">Contact</a>
+      <a href="#" class="text-lg text-gray-600 hover:text-gray-900">Blog</a>
+      <a href="#" class="text-lg text-gray-600 hover:text-gray-900">Careers</a>
+    </nav>
+    
+    <main>
+      <section class=" bg-hero-pattern-mobile lg:bg-hero-pattern-desktop bg-no-repeat bg-cover lg:bg-[center_left_45rem]">
+        <div class="container mx-auto flex flex-col-reverse lg:flex-row justify-between items-center w-full">
+          <!-- Left Content -->
+          <div class="lg:w-2/5 text-center lg:text-left p-3 slide-down">
+            <h1 class="text-4xl lg:text-6xl text-gray-800 leading-tight">
+              Next generation <br> digital banking
+            </h1>
+            <p class="text-Grayish-Blue mt-4">
+              Take your financial life online. Your Easybank account will be a one-stop-shop for spending,
+              saving, budgeting, investing, and much more.
+            </p>
+            <button class="mt-6 bg-gradient-to-r from-Lime-Green to-Bright-Cyan text-white px-6 py-3 rounded-full">
+              Request Invite
+            </button>
+          </div>
+      
+          <!-- Right Content -->
+          <div class="lg:w-3/5 lg:flex lg:justify-end slide-down">
+            <img src="images/image-mockups.png" alt="Mobile Mockup">
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6 text-center lg:text-left">
+          <!-- Section Title -->
+          <h2 class="text-3xl text-gray-800 mb-4 slide-down">Why choose Easybank?</h2>
+          <p class="text-Grayish-Blue mb-12 slide-down">
+            We leverage Open Banking to turn your bank account into your financial hub. <br>
+            Control your finances like never before.
+          </p>
+          
+          <!-- Features -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Feature 1 -->
+            <div class="flex flex-col items-center lg:items-start slide-down">
+              <div class="flex items-center lg:items-start justify-center mb-6">
+                <img src="images/icon-online.svg" alt="Online Banking" class="w-20 h-20">
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800 hover:text-Lime-Green mb-2 cursor-pointer">Online Banking</h3>
+              <p class="text-Grayish-Blue text-sm">
+                Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.
+              </p>
+            </div>
+      
+            <!-- Feature 2 -->
+            <div class="flex flex-col items-center lg:items-start slide-down">
+              <div class="flex items-center lg:items-start justify-center mb-6">
+                <img src="images/icon-budgeting.svg" alt="Simple Budgeting" class="w-20 h-20">
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800 hover:text-Lime-Green mb-2 cursor-pointer">Simple Budgeting</h3>
+              <p class="text-Grayish-Blue text-sm">
+                See exactly where your money goes each month. Receive notifications when you're close to hitting your limits.
+              </p>
+            </div>
+      
+            <!-- Feature 3 -->
+            <div class="flex flex-col items-center lg:items-start slide-down">
+              <div class="flex items-center lg:items-start justify-center mb-6">
+                <img src="images/icon-onboarding.svg" alt="Fast Onboarding" class="w-20 h-20">
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800 hover:text-Lime-Green mb-2 cursor-pointer">Fast Onboarding</h3>
+              <p class="text-Grayish-Blue text-sm">
+                We don’t do branches. Open your account in minutes online and start taking control of your finances right away.
+              </p>
+            </div>
+      
+            <!-- Feature 4 -->
+            <div class="flex flex-col items-center lg:items-start slide-down">
+              <div class="flex items-center lg:items-start justify-center mb-6">
+                <img src="images/icon-api.svg" alt="Open API" class="w-20 h-20">
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800 hover:text-Lime-Green mb-2 cursor-pointer">Open API</h3>
+              <p class="text-Grayish-Blue text-sm">
+                Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles Section -->
+      <section class="py-16">
+        <div class="container mx-auto px-6">
+          <!-- Section Title -->
+          <h2 class="text-3xl text-center lg:text-left text-gray-800 mb-8">Latest Articles</h2>
+          
+          <!-- Articles Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Article 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden slide-down">
+              <img src="images/image-currency.jpg" alt="Article 1" class="w-full h-56 object-cover">
+              <div class="p-6">
+                <p class="text-sm text-gray-500 mb-2">By Claire Robinson</p>
+                <h3 class="text-lg font-semibold text-gray-800 hover:text-Lime-Green mb-2 cursor-pointer">Receive money in any currency with no fees</h3>
+                <p class="text-Grayish-Blue text-sm">
+                  The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single...
+                </p>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden slide-down">
+              <img src="images/image-restaurant.jpg" alt="Article 2" class="w-full h-56 object-cover">
+              <div class="p-6">
+                <p class="text-sm text-Grayish-Blue mb-2">By Wilson Hutton</p>
+                <h3 class="text-lg font-semibold text-gray-800 hover:text-Lime-Green mb-2 cursor-pointer">Treat yourself without worrying about money</h3>
+                <p class=" text-Grayish-Blue text-sm">
+                  Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you...
+                </p>
+              </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden slide-down">
+              <img src="images/image-plane.jpg" alt="Article 3" class="w-full h-56 object-cover">
+              <div class="p-6">
+                <p class="text-sm text-gray-500 mb-2">By Wilson Hutton</p>
+                <h3 class="text-lg font-semibold text-gray-800 hover:text-Lime-Green mb-2 cursor-pointer">Take your Easybank card wherever you go</h3>
+                <p class="text-Grayish-Blue text-sm">
+                  We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you...
+                </p>
+              </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden slide-down">
+              <img src="images/image-confetti.jpg" alt="Article 4" class="w-full h-56 object-cover">
+              <div class="p-6">
+                <p class="text-sm text-gray-500 mb-2">By Claire Robinson</p>
+                <h3 class="text-lg font-semibold text-gray-800 hover:text-Lime-Green mb-2 cursor-pointer">Our invite-only Beta accounts are now live!</h3>
+                <p class="text-Grayish-Blue text-sm">
+                  After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-Dark-Blue text-white py-12">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row justify-between">
+          <!-- Logo and Social Media -->
+          <div class="mb-6 lg:mb-0 flex flex-col lg:flex-row items-center gap-0 lg:gap-28">
+            <div class="flex flex-col items-center gap-5 mb-4">
+              <img src="images/logo.svg" alt="Easybank Logo" class="h-7 brightness-100 invert hue-rotate-180 slide-down">
+              <div class="flex space-x-4">
+                <a href="#">
+                  <img src="images/icon-facebook.svg" alt="Facebook" class="h-6 slide-down">
+                </a>
+                <a href="#">
+                  <img src="images/icon-youtube.svg" alt="YouTube" class="h-6 slide-down">
+                </a>
+                <a href="#">
+                  <img src="images/icon-twitter.svg" alt="Twitter" class="h-6 slide-down">
+                </a>
+                <a href="#">
+                  <img src="images/icon-pinterest.svg" alt="Pinterest" class="h-6 slide-down">
+                </a>
+                <a href="#">
+                  <img src="images/icon-instagram.svg" alt="Instagram" class="h-6 slide-down">
+                </a>
+              </div>
+            </div>
+            
+
+            <!-- Footer Links -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 text-center lg:text-left gap-3 mb-6 lg:mb-0">
+              <a href="#" class="block text-Light-Grayish-Blue hover:text-Lime-Green slide-down">About Us</a>
+              <a href="#" class="block text-Light-Grayish-Blue hover:text-Lime-Green slide-down">Contact</a>
+              <a href="#" class="block text-Light-Grayish-Blue hover:text-Lime-Green slide-down">Blog</a>
+              <a href="#" class="block text-Light-Grayish-Blue hover:text-Lime-Green slide-down">Careers</a>
+              <a href="#" class="block text-Light-Grayish-Blue hover:text-Lime-Green slide-down">Support</a>
+              <a href="#" class="block text-Light-Grayish-Blue hover:text-Lime-Green slide-down">Privacy Policy</a>
+            </div>
+          </div>
+
+
+          <!-- Invite Button -->
+          <div class="flex flex-col items-center justify-center lg:items-end">
+            <button class="bg-gradient-to-r from-Lime-Green to-Bright-Cyan text-white px-6 py-3 rounded-full font-semibold slide-down">
+              Request Invite
+            </button>
+            <div class="text-center text-Grayish-Blue text-sm mt-6 slide-down">
+              © Easybank. All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
